@@ -1,0 +1,33 @@
+// valuable
+$White:white;
+$Black:black;
+$Red:red;
+$Blue:blue;
+$Yellow:yellow;
+
+// global
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+body{
+    margin: 0px;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+    // color:$White;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
