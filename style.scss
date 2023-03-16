@@ -43,6 +43,7 @@ button{
     align-items: center;
     color: $Black;
     padding: 15px;
+    z-index: 1;
 
     & .logo_img{
         width: 30px;
@@ -112,10 +113,7 @@ button{
 #about{
     & .about_title{
         position: relative;
-        text-align: center;
-        & .main_title{
-            
-        }
+
         &::after{
             content: "";
             display: block;
@@ -139,6 +137,54 @@ button{
             transform: scale(1.2);
             box-shadow: 0px 0px 20px 7px white;
             border: 2px solid $White;
+        }
+    }
+}
+
+// Service
+#service{
+    & .service_title{
+        position: relative;
+
+        &::after{
+            content: "";
+            display: block;
+            height: 2px;
+            width: 300px;
+            border-bottom: 1px solid #707070;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    & .service_content{
+        position: relative;
+
+        & .zoom_back{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 2px 20px 11px rgb(53 60 75 / 78%);
+            background-color: rgba(0, 0, 0, 0.8);
+            //display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+
+            & .zoom_img{
+                width: 50%;
+                border: 5px solid $White;
+                cursor: pointer;
+            }
+        }
+
+        & .service_photo{
+            width: 30%;
+            border: 5px solid $Black;
+            cursor: pointer;
         }
     }
 }
