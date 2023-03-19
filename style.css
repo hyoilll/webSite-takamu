@@ -31,7 +31,6 @@ button {
   align-items: center;
   color: black;
   padding: 15px;
-  z-index: 1;
 }
 #navbar .logo_img {
   width: 30px;
@@ -151,5 +150,39 @@ button {
 #service .service_content .service_photo {
   width: 30%;
   border: 5px solid black;
+  cursor: pointer;
+}
+
+#reservation .reservation_title {
+  position: relative;
+}
+#reservation .reservation_title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 300px;
+  border-bottom: 1px solid #707070;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#reservation .reservation_content > form > div {
+  margin-bottom: 10px;
+}
+#reservation .reservation_content > form > div input, #reservation .reservation_content > form > div textarea {
+  width: 50%;
+  padding: 5px;
+  outline: none;
+}
+#reservation .reservation_content > form > div textarea {
+  height: 100px;
+}
+#reservation .reservation_content > form > div .input_date {
+  width: 39%;
+}
+#reservation .reservation_content > form > div .input_submit {
+  background-color: black;
+  color: white;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

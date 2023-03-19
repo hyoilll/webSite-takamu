@@ -43,7 +43,7 @@ button{
     align-items: center;
     color: $Black;
     padding: 15px;
-    z-index: 1;
+    // z-index: 1;
 
     & .logo_img{
         width: 30px;
@@ -187,4 +187,54 @@ button{
             cursor: pointer;
         }
     }
+}
+
+// Reservation
+#reservation{
+    & .reservation_title{
+        position: relative;
+
+        &::after{
+            content: "";
+            display: block;
+            height: 2px;
+            width: 300px;
+            border-bottom: 1px solid #707070;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    & .reservation_content{
+        & > form{
+            & > div{
+                margin-bottom: 10px;
+                & input,
+                & textarea{
+                    width: 50%;
+                    padding: 5px;
+                    outline: none;
+                    
+                }
+                & textarea{
+                    height: 100px;
+                }
+                & .input_date{
+                    width: 39%;
+                }
+
+                & .input_submit{
+                    background-color: $Black;
+                    color: $White;
+                    cursor: pointer;
+                }
+                
+
+            }
+        }
+    }
+
+
 }

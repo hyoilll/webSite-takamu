@@ -78,7 +78,52 @@
         </div>
     </section>
     <!-- Reservation -->
-    <section id="reservation"></section>
+    <section id="reservation" class="section">
+        <div class="reservation_title">
+            <h1 class="main_title">Reservation</h1>
+        </div>
+        <div class="reservation_content">
+            <form action="">
+                <div class="name">
+                    <div class="label_name">
+                        <label for="name">Name</label>
+                    </div>
+                    <input type="text" id="name" class="input_name" placeholder="山田太郎" required>
+                </div>
+                <div class="phoneNumber">
+                    <div class="label_phoneNumber">
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <input type="text" id="phoneNumber" class="input_phoneNumber" placeholder="000-0000-0000" required>
+                </div>
+                <div class="date">
+                    <div class="label_date">
+                        <label for="date">Date</label>
+                        <div class="comment">既に埋まっている場合、別の時間にご案内させていただきます。</div>
+                    </div>
+                    <div class="date_time">
+                        <input type="date" id="date" class="input_date" placeholder="000-0000-0000" required>
+                        <select name="time">
+                            <option value="11:00~13:00">11:00~13:00</option>
+                            <option value="13:00~15:00">13:00~15:00</option>
+                            <option value="15:00~17:00">15:00~17:00</option>
+                            <option value="17:00~19:00">17:00~19:00</option>
+                            <option value="19:00~21:00">19:00~21:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inquiry">
+                    <div class="label_inquiry">
+                        <label for="inquiry">Inquiry</label>
+                    </div>
+                    <textarea type="text" id="inquiry" class="input_inquiry" placeholder="問い合わせ内容を入力しておください。" required></textarea>
+                </div>
+                <div class="form_submit">
+                    <input type="submit" class="input_submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
     <!-- Access -->
     <section id="access"></section>
     <!-- Contact -->
