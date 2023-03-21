@@ -179,10 +179,21 @@ button {
   height: 100px;
 }
 #reservation .reservation_content > form > div .input_date {
-  width: 39%;
+  width: 50%;
+}
+#reservation .reservation_content > form > div .input_time {
+  display: block;
+  width: 15%;
+  margin-top: 5px;
 }
 #reservation .reservation_content > form > div .input_submit {
   background-color: black;
   color: white;
   cursor: pointer;
+}
+#reservation .reservation_content > form > div .date_time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

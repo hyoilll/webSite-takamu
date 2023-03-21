@@ -83,12 +83,18 @@
             <h1 class="main_title">Reservation</h1>
         </div>
         <div class="reservation_content">
-            <form action="">
+            <form id="form_recipe" action="">
                 <div class="name">
                     <div class="label_name">
                         <label for="name">Name</label>
                     </div>
                     <input type="text" id="name" class="input_name" placeholder="山田太郎" required>
+                </div>
+                <div class="email">
+                    <div class="label_email">
+                        <label for="email">Email</label>
+                    </div>
+                    <input type="email" id="email" class="input_email" placeholder="yamadataro@gmail.com" required>
                 </div>
                 <div class="phoneNumber">
                     <div class="label_phoneNumber">
@@ -103,7 +109,7 @@
                     </div>
                     <div class="date_time">
                         <input type="date" id="date" class="input_date" placeholder="000-0000-0000" required>
-                        <select name="time">
+                        <select name="time" class="input_time">
                             <option value="11:00~13:00">11:00~13:00</option>
                             <option value="13:00~15:00">13:00~15:00</option>
                             <option value="15:00~17:00">15:00~17:00</option>
@@ -128,6 +134,7 @@
     <section id="access"></section>
     <!-- Contact -->
     <section id="contact"></section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

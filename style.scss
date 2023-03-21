@@ -211,6 +211,7 @@ button{
         & > form{
             & > div{
                 margin-bottom: 10px;
+
                 & input,
                 & textarea{
                     width: 50%;
@@ -222,7 +223,12 @@ button{
                     height: 100px;
                 }
                 & .input_date{
-                    width: 39%;
+                    width: 50%;
+                }
+                & .input_time{
+                    display: block;
+                    width: 15%;
+                    margin-top: 5px;
                 }
 
                 & .input_submit{
@@ -230,8 +236,12 @@ button{
                     color: $White;
                     cursor: pointer;
                 }
-                
-
+                & .date_time{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }
