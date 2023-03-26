@@ -245,6 +245,40 @@ button{
             }
         }
     }
+}
 
+// Access
+#access{
+    & .access_title{
+        position: relative;
 
+        &::after{
+            content: "";
+            display: block;
+            height: 2px;
+            width: 300px;
+            border-bottom: 1px solid #707070;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    & .ifream-wrp{
+        width: 100%;
+
+        & .map{
+            width: 50%;
+            height: 100%;
+            aspect-ratio: 16/10;
+        }
+    }
+}
+
+// Contact
+#contact{
+    background-color: antiquewhite;
+
+    
 }
