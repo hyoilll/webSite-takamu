@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takamu</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31791c4d13.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navber_logo">
+        <a href="#" class="mv_home">
             <img src="./img/20221229_135911.jpg" alt="logo" class="logo_img"/>
-            <a href="#">Takamu</a>
-        </div>
+            Takamu
+        </a>
         <ul class="navbar_menu">
-            <li class="item">Home</li>
-            <li class="item">About</li>
-            <li class="item">Services</li>
-            <li class="item">Reservation</li>
-            <li class="item">Access</li>
-            <li class="item">Contact</li>
+            <li class="item" data-link="#home">Home</li>
+            <li class="item" data-link="#about">About</li>
+            <li class="item" data-link="#service">Services</li>
+            <li class="item" data-link="#reservation">Reservation</li>
+            <li class="item" data-link="#access">Access</li>
+            <li class="item" data-link="#contact">Contact</li>
         </ul>
 
         <!-- Toggle button -->
+        <button class="navbar_toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
     <!-- Home -->
     <section id="home">
@@ -105,10 +109,12 @@
                 <div class="date">
                     <div class="label_date">
                         <label for="date">Date</label>
-                        <div class="comment">既に埋まっている場合、別の時間にご案内させていただきます。</div>
+                        <span class="date_description">
+                            <i class="fa-regular fa-bell"></i>
+                        </span>
                     </div>
                     <div class="date_time">
-                        <input type="date" id="date" class="input_date" placeholder="000-0000-0000" required>
+                        <input type="date" id="date" class="input_date" required>
                         <select name="time" class="input_time">
                             <option value="11:00~13:00">11:00~13:00</option>
                             <option value="13:00~15:00">13:00~15:00</option>

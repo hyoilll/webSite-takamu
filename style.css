@@ -5,6 +5,7 @@
 ul {
   list-style: none;
   padding-left: 0px;
+  margin: 0px 0px;
 }
 
 body {
@@ -30,7 +31,9 @@ button {
   justify-content: space-between;
   align-items: center;
   color: black;
-  padding: 15px;
+  padding: 10px;
+  z-index: 1;
+  transition: all 0.3s ease-in;
 }
 #navbar .logo_img {
   width: 30px;
@@ -41,7 +44,7 @@ button {
   display: flex;
 }
 #navbar .navbar_menu > li {
-  padding: 8px 12px;
+  padding: 0px 12px;
   margin: 0 4px;
   cursor: pointer;
   border-radius: 4px;
@@ -49,6 +52,20 @@ button {
 }
 #navbar .navbar_menu > li:hover {
   border: 1px solid grey;
+}
+#navbar .navbar_menu.open {
+  display: block;
+}
+#navbar.navbar--dark {
+  background-color: antiquewhite;
+}
+#navbar .navbar_toggle-btn {
+  position: absolute;
+  right: 32px;
+  top: 12px;
+  font-size: 24px;
+  color: black;
+  display: none;
 }
 
 #home {
@@ -143,7 +160,7 @@ button {
   display: none;
 }
 #service .service_content .zoom_back .zoom_img {
-  width: 50%;
+  width: 80%;
   border: 5px solid white;
   cursor: pointer;
 }
@@ -223,4 +240,89 @@ button {
 
 #contact {
   background-color: antiquewhite;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #navbar .navbar_toggle-btn {
+    display: block;
+  }
+  #navbar .navbar_menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  #navbar .navbar_menu li {
+    position: relative;
+  }
+  #navbar .navbar_menu li:nth-child(1)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navbar .navbar_menu li:nth-child(2)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navbar .navbar_menu li:nth-child(3)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navbar .navbar_menu li:nth-child(4)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navbar .navbar_menu li:nth-child(5)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navbar .navbar_menu li:nth-child(6)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=style.css.map */

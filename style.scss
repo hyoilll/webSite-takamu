@@ -14,6 +14,7 @@ $Yellow:yellow;
 ul{
     list-style: none;
     padding-left: 0px;
+    margin: 0px 0px;
 }
 
 body{
@@ -42,8 +43,9 @@ button{
     // background-color: transparent;
     align-items: center;
     color: $Black;
-    padding: 15px;
-    // z-index: 1;
+    padding: 10px;
+     z-index: 1;
+     transition: all 0.3s ease-in;
 
     & .logo_img{
         width: 30px;
@@ -55,7 +57,7 @@ button{
         display: flex;
 
         & > li{
-            padding: 8px 12px;
+            padding: 0px 12px;
             margin: 0 4px;
             cursor: pointer;
             border-radius: 4px;
@@ -64,6 +66,23 @@ button{
         & > li:hover{
             border: 1px solid $Grey;
         }
+    }
+
+    & .navbar_menu.open{
+        display: block;
+    }
+
+    &.navbar--dark{
+        background-color: antiquewhite;
+    }
+
+    & .navbar_toggle-btn{
+        position: absolute;
+        right: 32px;
+        top: 12px;
+        font-size: 24px;
+        color: $Black;
+        display: none;
     }
 }
 
@@ -175,7 +194,7 @@ button{
             display: none;
 
             & .zoom_img{
-                width: 50%;
+                width: 80%;
                 border: 5px solid $White;
                 cursor: pointer;
             }
@@ -281,4 +300,44 @@ button{
     background-color: antiquewhite;
 
     
+}
+
+@media screen and (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+        .navbar_toggle-btn{
+            display:block;
+        }
+
+        & .navbar_menu{
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            display: none;
+
+            & li{
+                position: relative;
+            }
+
+            @for $i from 1 through 6{
+                & li:nth-child(#{$i}){
+                    &::after{
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        width: 50%;
+                        border-bottom: 1px solid $White;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+
+            
+        }
+    }
 }
