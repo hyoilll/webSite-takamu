@@ -330,7 +330,7 @@ button{
                         width: 50%;
                         border-bottom: 1px solid $White;
                         position: absolute;
-                        bottom: -5px;
+                        bottom: 3px;
                         left: 50%;
                         transform: translateX(-50%);
                     }
@@ -338,6 +338,39 @@ button{
             }
 
             
+        }
+    }
+
+    #about{
+        & .about_content{
+            & img:hover{
+                transform: scale(1.7);
+            }
+        }
+    }
+
+    #reservation{
+        & .reservation_content{
+            & > form{
+                & > div{
+                    & input,
+                    & textarea,
+                    & .input_date{
+                        width: 80%;
+                    }
+                    & .input_time{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+    #access{
+        & .ifream-wrp{
+            & .map{
+                width: 85%;
+            }
         }
     }
 }

@@ -59,12 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // date description btn click
-  const descriptionBtn = document.querySelector(".date_description");
-  descriptionBtn.addEventListener("click", () => {
-    alert(
-      "指定して頂いた時間が既に埋まっている場合には、メールで別の時間にご案内させていただきます。"
-    );
-  });
+  const descriptionBtn = (className, showMsg) => {
+    const btn = document.querySelector(className);
+    btn.addEventListener("click", () => {
+      alert(showMsg);
+    });
+  };
+  descriptionBtn(
+    ".date_description",
+    "指定して頂いた時間が既に埋まっている場合には、メールで別の時間にご案内させていただきます。"
+  );
+  descriptionBtn(".phoneNumber_description", "数字以外は入力できません。");
 
   // Press Menu to move to the menu area
   const navbar_menu = document.querySelector(".navbar_menu");

@@ -266,7 +266,7 @@ button {
     width: 50%;
     border-bottom: 1px solid white;
     position: absolute;
-    bottom: -5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -277,7 +277,7 @@ button {
     width: 50%;
     border-bottom: 1px solid white;
     position: absolute;
-    bottom: -5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -288,7 +288,7 @@ button {
     width: 50%;
     border-bottom: 1px solid white;
     position: absolute;
-    bottom: -5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -299,7 +299,7 @@ button {
     width: 50%;
     border-bottom: 1px solid white;
     position: absolute;
-    bottom: -5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -310,7 +310,7 @@ button {
     width: 50%;
     border-bottom: 1px solid white;
     position: absolute;
-    bottom: -5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -321,8 +321,20 @@ button {
     width: 50%;
     border-bottom: 1px solid white;
     position: absolute;
-    bottom: -5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #about .about_content img:hover {
+    transform: scale(1.7);
+  }
+  #reservation .reservation_content > form > div input, #reservation .reservation_content > form > div textarea, #reservation .reservation_content > form > div .input_date {
+    width: 80%;
+  }
+  #reservation .reservation_content > form > div .input_time {
+    width: 40%;
+  }
+  #access .ifream-wrp .map {
+    width: 85%;
   }
 }/*# sourceMappingURL=style.css.map */
